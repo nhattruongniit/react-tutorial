@@ -1,0 +1,61 @@
+body {
+  margin: 0 0 100px 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.FancyBorder {
+  padding: 10px 10px;
+  border: 10px solid;
+}
+
+.FancyBorder-blue {
+  border-color: blue;
+}
+
+.Dialog-title {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.Dialog-message {
+  font-size: larger;
+}
+
+.SplitPane {
+  width: 100%;
+  height: 300px;
+}
+
+.SplitPane-left {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.Contacts {
+  width: 100%;
+  height: 100%;
+  background: lightblue;
+}
+
+.SplitPane-right {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+
+.Chat {
+  width: 100%;
+  height: 100%;
+  background: pink;
+}

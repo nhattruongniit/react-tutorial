@@ -59,3 +59,10 @@ code {
   height: 100%;
   background: pink;
 }
+
+.dark {
+  background-color: #000;
+}
+.light {
+  background-color: #ffffff;
+}

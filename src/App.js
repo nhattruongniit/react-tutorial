@@ -10,9 +10,17 @@ import LiftingState from './LiftingState';
 import Composition from './Composition';
 import Refs from './Refs';
 import Lazyload from './Lazyload';
+import ThemeButton from './Context/themeButton';
+import { ThemeContext, themes } from './Context/themeContext';
+import { Hooks } from './Hooks';
 
 class App extends Component {
+  state = {
+    theme: themes.light
+  }
   render() {
+    const { theme } = this.state;
+
     return (
       <div className="App">
         <About type="ads">
@@ -27,6 +35,10 @@ class App extends Component {
         <Composition />
         <Refs />
         <Lazyload />
+        <ThemeContext.Provider value={theme}>
+          <ThemeButton />
+        </ThemeContext.Provider>
+        <Hooks />
       </div>
     );
   }

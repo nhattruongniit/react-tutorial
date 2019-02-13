@@ -66,3 +66,32 @@ code {
 .light {
   background-color: #ffffff;
 }
+
+.wrapper {
+  display: flex;
+}
+.content {
+  flex: 80%;
+}
+.sidebar {
+  flex: 20%;
+  height: 100vh;
+  border-right: 1px solid #bebeb6;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.sidebar ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #000;
+}
+.sidebar ul li a.active {
+  color: #f00;
+}

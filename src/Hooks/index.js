@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export const Hooks = () => {
   const [count, setCount] = useState(0);
@@ -10,7 +10,16 @@ export const Hooks = () => {
 
   const handleClick = () => {
     setCount(count + 1);
-  }
+    const item = {
+      text: 'Test'
+    };
+    const newTodo = [...todos, item];
+    setTodos(newTodo);
+  };
+
+  useEffect(() => {
+    console.log('useEffect: ', `You clicked ${count} times`)
+  })
 
   return (
     <div>

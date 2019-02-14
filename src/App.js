@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter, NavLink } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
+import { reducer as form } from 'redux-form';
 import appReducer from './redux/reducer';
 import Routes from './Routes';
 
+
 const store = createStore(
-  appReducer,
+  combineReducers({
+    appReducer,
+    form,
+  }),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()  
 );
 

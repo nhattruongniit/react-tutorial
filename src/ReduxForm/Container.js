@@ -1,36 +1,32 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
+class SimpleForm extends React.Component {
+  handleSubmit = (data) => {
+     console.log('Submission received!', data);
+  }
 
-const SimpleForm = ({  handleSubmit, pristine, reset, submitting }) => {
-  return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>First Name</label>
-        <div>
-          <Field name="firstName" component="input" type="text" placeholder="First Name"/>
-        </div>
-      </div>
-      <div>
-        <label>Last Name</label>
-        <div>
-          <Field name="lastName" component="input" type="text" placeholder="Last Name"/>
-        </div>
-      </div>
-      <div>
-        <label>Email</label>
-        <div>
-          <Field name="email" component="input" type="email" placeholder="Email"/>
-        </div>
-      </div>
-      <div>
-        <button type="submit" disabled={pristine || submitting}>Submit</button>
-        <button type="button" disabled={pristine || submitting} onClick={reset}>Clear Values</button>
-      </div>
-    </form>
-  )
-};
+  render() {
+    const { handleSubmit } = this.props;
 
-export default reduxForm({
-  form: 'simple'
+    return (
+      <form onSubmit={handleSubmit(this.handleSubmit)}>
+        <div>
+          <label htmlFor="firstName">First Name</label>
+          <Field name="firstName" component="input" type="text"/>
+        </div>
+        <div>
+          <label htmlFor="lastName">Last Name</label>
+          <Field name="lastName" component="input" type="text"/>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    );
+  }
+}
+
+export default SimpleForm = reduxForm({
+  form: 'profile' // a unique name for this form
 })(SimpleForm);
 
+
+// Decorate the form

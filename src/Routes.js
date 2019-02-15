@@ -10,7 +10,6 @@ import LiftingState from './LiftingState';
 import Composition from './Composition';
 import Refs from './Refs';
 import SimpleForm from './ReduxForm';
-import { Hooks } from './Hooks';
 
 const Routes = () => (
   <Switch>
@@ -22,7 +21,6 @@ const Routes = () => (
     <Route path="/lifting-state" component={LiftingState} />
     <Route path="/composition" component={Composition} />
     <Route path="/refs" component={Refs} />
-    <Route path="/hooks" component={Hooks} />
     <Route path="/redux-form" component={SimpleForm} />
   </Switch>
 );

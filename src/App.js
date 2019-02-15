@@ -45,9 +45,6 @@ class App extends Component {
                   <NavLink to="/refs" activeClassName="active" >Refs</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/hooks" activeClassName="active" >Hooks</NavLink>
-                </li>
-                <li>
                   <NavLink to="/redux-form" activeClassName="active" >Redux Form</NavLink>
                 </li>
               </ul>

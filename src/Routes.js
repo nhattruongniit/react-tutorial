@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import Login from './Login';
+import Dashboard from './Dashboard';
 import Clock from './Clock';
 import HandingEvent from './HandlingEvent';
 import Condition from './Condition';
@@ -14,6 +16,8 @@ import { Hooks } from './Hooks';
 
 const Routes = () => (
   <Switch>
+    <Route path="/login" component={Login} />
+    <Route path="/dashboard" component={Dashboard} />
     <Route path="/clock" component={Clock} />
     <Route path="/handling-event" component={HandingEvent} />
     <Route path="/condition" component={Condition} />

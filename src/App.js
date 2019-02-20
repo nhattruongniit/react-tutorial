@@ -24,6 +24,12 @@ class App extends Component {
             <div className="sidebar">
               <ul>
                 <li>
+                  <NavLink to="/dashboard" activeClassName="active" >Dashboard</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/login" activeClassName="active" >Login</NavLink>
+                </li>
+                <li>
                   <NavLink to="/clock" activeClassName="active" >Clock</NavLink>
                 </li>
                 <li>

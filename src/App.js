@@ -53,6 +53,9 @@ class App extends Component {
                 <li>
                   <NavLink to="/redux-form" activeClassName="active" >Redux Form</NavLink>
                 </li>
+                <li>
+                  <NavLink to="/mouse-position" activeClassName="active" >Mouse Position with HOC</NavLink>
+                </li>
               </ul>
             </div>
             <div className="content">

@@ -10,7 +10,7 @@ const WelcomeDialog = () => {
     <FancyBorder color="blue">
       <Fragment>
         <h1 className="Dialog-title">Welcome</h1>
-        <p className="Dialog-message">Thank you for visiting our spaceraft!</p>
+        <p className="Dialog-message">Thank you for visiting our spacecraft!</p>
       </Fragment>
     </FancyBorder>
   )

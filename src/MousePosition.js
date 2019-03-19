@@ -17,6 +17,8 @@ export class MousePosition extends React.Component {
         <p style={{ background: 'orange' }}>
           HOCs the current mouse position is ({x}, {y})
         </p>
+
+        {/* render props */}
         <MouseRenderProps render={(state) => (
           <h1>Render props The mouse position is ({state.x}, {state.y})</h1>
         )}/>

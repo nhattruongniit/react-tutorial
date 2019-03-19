@@ -13,6 +13,8 @@ import Composition from './Composition';
 import Refs from './Refs';
 import SimpleForm from './ReduxForm';
 import { HocWithMouse } from './MousePosition';
+import { MousePositionHook } from './MousePositionHook';
+
 
 const Routes = () => (
   <Switch>
@@ -28,6 +30,7 @@ const Routes = () => (
     <Route path="/refs" component={Refs} />
     <Route path="/redux-form" component={SimpleForm} />
     <Route path="/mouse-position" component={HocWithMouse} />
+    <Route path="/mouse-hook" component={MousePositionHook} />
   </Switch>
 );
 

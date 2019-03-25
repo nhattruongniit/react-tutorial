@@ -59,6 +59,9 @@ class App extends Component {
                 <li>
                   <NavLink to="/mouse-hook" activeClassName="active" >Mouse Position with React Hooks</NavLink>
                 </li>
+                <li>
+                  <NavLink to="/curry" activeClassName="active" >Curry function</NavLink>
+                </li>
               </ul>
             </div>
             <div className="content">

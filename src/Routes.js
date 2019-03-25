@@ -12,6 +12,7 @@ import LiftingState from './LiftingState';
 import Composition from './Composition';
 import Refs from './Refs';
 import SimpleForm from './ReduxForm';
+import Curry from './Curry';
 import { HocWithMouse } from './MousePosition';
 import { MousePositionHook } from './MousePositionHook';
 
@@ -31,6 +32,7 @@ const Routes = () => (
     <Route path="/redux-form" component={SimpleForm} />
     <Route path="/mouse-position" component={HocWithMouse} />
     <Route path="/mouse-hook" component={MousePositionHook} />
+    <Route path="/curry" component={Curry} />
   </Switch>
 );
 

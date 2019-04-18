@@ -51,6 +51,7 @@
     "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-form": "^8.1.0",
+    "redux-persist": "^5.10.0",
     "resolve": "1.8.1",
     "riteway": "^6.0.3",
     "sass-loader": "7.1.0",

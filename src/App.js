@@ -106,6 +106,16 @@ class App extends Component {
                     Curry function
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/hooks-test" activeClassName="active">
+                    Hooks test
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/hooks-callback" activeClassName="active">
+                    useCallBack hooks
+                  </NavLink>
+                </li>
               </ul>
             </div>
             <div className="content">

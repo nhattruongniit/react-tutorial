@@ -5,4 +5,5 @@
 - Use redux persists
 - Use Redux Form
 - Use React Redux
-- Use HOC
+- Use HOC,
+- useMemo, useCallBack

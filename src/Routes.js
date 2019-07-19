@@ -1,21 +1,22 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
-import Login from './Login';
-import Dashboard from './Dashboard';
-import Clock from './Clock';
-import HandingEvent from './HandlingEvent';
-import Condition from './Condition';
-import ListKeys from './ListKeys';
-import Select from './Select';
-import LiftingState from './LiftingState';
-import Composition from './Composition';
-import Refs from './Refs';
-import SimpleForm from './ReduxForm';
-import Curry from './Curry';
-import { HocWithMouse } from './MousePosition';
-import { MousePositionHook } from './MousePositionHook';
-
+import Login from "./Login";
+import Dashboard from "./Dashboard";
+import Clock from "./Clock";
+import HandingEvent from "./HandlingEvent";
+import Condition from "./Condition";
+import ListKeys from "./ListKeys";
+import Select from "./Select";
+import LiftingState from "./LiftingState";
+import Composition from "./Composition";
+import Refs from "./Refs";
+import SimpleForm from "./ReduxForm";
+import Curry from "./Curry";
+import { HocWithMouse } from "./MousePosition";
+import { MousePositionHook } from "./MousePositionHook";
+import HookTest from "./hooks";
+import HooksCallBack from "./hooks/useCallback";
 
 const Routes = () => (
   <Switch>
@@ -33,8 +34,9 @@ const Routes = () => (
     <Route path="/mouse-position" component={HocWithMouse} />
     <Route path="/mouse-hook" component={MousePositionHook} />
     <Route path="/curry" component={Curry} />
+    <Route path="/hooks-test" component={HookTest} />
+    <Route path="/hooks-callback" component={HooksCallBack} />
   </Switch>
 );
 
 export default Routes;
-

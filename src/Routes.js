@@ -15,7 +15,7 @@ import SimpleForm from "./ReduxForm";
 import Curry from "./Curry";
 import { HocWithMouse } from "./MousePosition";
 import { MousePositionHook } from "./MousePositionHook";
-import HookTest from "./hooks";
+import HookTest from "./hooks/hooks";
 import HooksCallBack from "./hooks/useCallback";
 
 const Routes = () => (

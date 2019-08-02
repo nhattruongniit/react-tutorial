@@ -17,6 +17,7 @@ import { HocWithMouse } from "./MousePosition";
 import { MousePositionHook } from "./MousePositionHook";
 import HookTest from "./hooks/hooks";
 import HooksCallBack from "./hooks/useCallback";
+import UseMemo from "./useMemo";
 
 const Routes = () => (
   <Switch>
@@ -36,6 +37,7 @@ const Routes = () => (
     <Route path="/curry" component={Curry} />
     <Route path="/hooks-test" component={HookTest} />
     <Route path="/hooks-callback" component={HooksCallBack} />
+    <Route path="/use-memo" component={UseMemo} />
   </Switch>
 );
 

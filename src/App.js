@@ -121,6 +121,11 @@ class App extends Component {
                     render props
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/use-memo" activeClassName="active">
+                    useMemo
+                  </NavLink>
+                </li>
               </ul>
             </div>
             <div className="content">

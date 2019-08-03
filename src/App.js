@@ -116,6 +116,11 @@ class App extends Component {
                     useCallBack hooks
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/render-props" activeClassName="active">
+                    render props
+                  </NavLink>
+                </li>
               </ul>
             </div>
             <div className="content">

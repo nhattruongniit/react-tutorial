@@ -17,6 +17,7 @@ import { HocWithMouse } from "./MousePosition";
 import { MousePositionHook } from "./MousePositionHook";
 import HookTest from "./hooks/hooks";
 import HooksCallBack from "./hooks/useCallback";
+import RenderProps from "./RenderProps";
 import UseMemo from "./useMemo";
 import Memo from "./memo";
 
@@ -38,6 +39,7 @@ const Routes = () => (
     <Route path="/curry" component={Curry} />
     <Route path="/hooks-test" component={HookTest} />
     <Route path="/hooks-callback" component={HooksCallBack} />
+    <Route path="/render-props" component={RenderProps} />
     <Route path="/use-memo" component={UseMemo} />
     <Route path="/memo" component={Memo} />
   </Switch>

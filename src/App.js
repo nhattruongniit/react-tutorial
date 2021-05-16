@@ -31,7 +31,7 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-const persistor = persistStore(store);
+// const persistor = persistStore(store);
 
 class App extends Component {
   render() {
@@ -135,12 +135,7 @@ class App extends Component {
             </div>
             <div className="content">
               <Provider store={store}>
-                <PersistGate
-                  loading={<div>Loading ...</div>}
-                  persistor={persistor}
-                >
-                  <Routes />
-                </PersistGate>
+                <Routes />
               </Provider>
             </div>
           </div>

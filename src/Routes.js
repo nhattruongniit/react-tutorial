@@ -11,7 +11,7 @@ import Select from "./Select";
 import LiftingState from "./LiftingState";
 import Composition from "./Composition";
 import Refs from "./Refs";
-import SimpleForm from "./ReduxForm";
+// import SimpleForm from "./ReduxForm";
 import Curry from "./Curry";
 import { HocWithMouse } from "./MousePosition";
 import { MousePositionHook } from "./MousePositionHook";
@@ -23,25 +23,25 @@ import Memo from "./memo";
 
 const Routes = () => (
   <Switch>
-    <Route path="/login" component={Login} />
-    <Route path="/dashboard" component={Dashboard} />
-    <Route path="/clock" component={Clock} />
-    <Route path="/handling-event" component={HandingEvent} />
-    <Route path="/condition" component={Condition} />
-    <Route path="/list-keys" component={ListKeys} />
-    <Route path="/select" component={Select} />
-    <Route path="/lifting-state" component={LiftingState} />
-    <Route path="/composition" component={Composition} />
-    <Route path="/refs" component={Refs} />
-    <Route path="/redux-form" component={SimpleForm} />
-    <Route path="/mouse-position" component={HocWithMouse} />
-    <Route path="/mouse-hook" component={MousePositionHook} />
-    <Route path="/curry" component={Curry} />
-    <Route path="/hooks-test" component={HookTest} />
-    <Route path="/hooks-callback" component={HooksCallBack} />
-    <Route path="/render-props" component={RenderProps} />
-    <Route path="/use-memo" component={UseMemo} />
-    <Route path="/memo" component={Memo} />
+    <Route exact path="/" component={Login} />
+    <Route exact path="/dashboard" component={Dashboard} />
+    <Route exact path="/clock" component={Clock} />
+    <Route exact path="/handling-event" component={HandingEvent} />
+    <Route exact path="/condition" component={Condition} />
+    <Route exact path="/list-keys" component={ListKeys} />
+    <Route exact path="/select" component={Select} />
+    <Route exact path="/lifting-state" component={LiftingState} />
+    <Route exact path="/composition" component={Composition} />
+    <Route exact path="/refs" component={Refs} />
+    {/*<Route path="/redux-form" component={SimpleForm} />*/}
+    <Route exact path="/mouse-position" component={HocWithMouse} />
+    <Route exact path="/mouse-hook" component={MousePositionHook} />
+    <Route exact path="/curry" component={Curry} />
+    <Route exact path="/hooks-test" component={HookTest} />
+    <Route exact path="/hooks-callback" component={HooksCallBack} />
+    <Route exact path="/render-props" component={RenderProps} />
+    <Route exact path="/use-memo" component={UseMemo} />
+    <Route exact path="/memo" component={Memo} />
   </Switch>
 );
 

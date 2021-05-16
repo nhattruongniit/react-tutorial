@@ -8,10 +8,10 @@ function Logout({ username, onLogout }) {
 const MemoizedLogout = memo(Logout);
 
 export default function UseMemo() {
-  const onLogout = useCallback(() => cookies.clear(), [cookies]);
+  // const onLogout = useCallback(() => cookies.clear(), [cookies]);
   return (
     <>
-      <MemoizedLogout username="truong" onLogout={onLogout} />
+      <MemoizedLogout username="truong" onLogout={() => {}} />
     </>
   );
 }

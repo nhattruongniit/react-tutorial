@@ -95,3 +95,7 @@ code {
 .sidebar ul li a.active {
   color: #f00;
 }
+
+.para {
+  font-size: 30px;
+}

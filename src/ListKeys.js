@@ -1,21 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-class ListKeys extends React.Component {
-  componentDidMount() {
+import LiftingStateHook from './LiftingStateHook';
+
+export default function ListKeys() {
+  const [text, setText] = useState('');
+  const [todos, setTodos] = useState([
+    {
+      id: 1,
+      text: 'learn javascript'
+    }
+  ])
+
+  function handleDeleteTodo(todoId) {
+    const newTodos = todos.filter(todo => todo.id !== todoId)
+    setTodos(newTodos);
   }
 
-  render() {
-    const numbers = [1, 2, 3, 4, 5];
-    const listItems = numbers.map(number =>
-      <li key={number.toString()}>{number}</li>
-    );
-    return (
-      <div>
-        <h1>This is ListKeys component</h1>
-        <ul>{listItems}</ul>
-      </div>
-    )
+  function handleAddTodo() {
+    setText('');
+    const newTodo = {
+      id: Date.now(),
+      text
+    }
+    setTodos([...todos, newTodo])
   }
+
+  function handleChangeText(event) {
+    setText(event.target.value)
+  }
+
+  return (
+    <div>
+      <input type="text" value={text} onChange={handleChangeText} />
+      <button type="button" onClick={handleAddTodo}>Add Todo</button>
+      {todos.length > 0 && todos.map(todo => {
+        return (
+          <div key={todo.id}>
+             <LiftingStateHook todo={todo} handleDeleteTodo={handleDeleteTodo} />
+          </div>
+        )
+      })}
+    
+    </div>
+  )
 }
-
-export default ListKeys;

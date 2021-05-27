@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const scaleName = {
   c: 'Celsius',
   f: 'Fahrenheit'
